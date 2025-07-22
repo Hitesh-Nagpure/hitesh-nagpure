@@ -33,17 +33,17 @@ var interactiveSkill = document.querySelector(".interactive-skill");
 var skillInfo = document.getElementById("skill-info");
 
 const skillDescriptions = {
-    python: "Used for machine learning, web development, and automation scripts",
-    javascript: "Frontend development, Node.js backend, and interactive web applications",
-    cpp: "System programming, competitive programming, and embedded systems",
+    python: "Used for machine learning, web development, robotics and automation",
+    javascript: "Frontend development, backend development, and interactive web applications",
+    cpp: "Data Structures, Algorithms, embedded systems, System programming and competitive programming",
     java: "Object-oriented programming and Android development basics",
-    html: "Semantic markup, accessibility, and modern web standards",
-    css: "Advanced styling, animations, flexbox, and grid layouts",
-    react: "Component-based UI development and state management",
-    nodejs: "Server-side JavaScript and API development",
+    html: "MongoDB Express, React and Node for various projects and web applications",
+    css: "PostgreSQL Express, React and Node for various projects and web applications",
+    react: "Various Relational and non-relational databases for CRUD operations",
+    nodejs: "Deployment of websites and applications on the internet",
     ml: "Supervised learning, neural networks, and data analysis",
     robotics: "Arduino programming, sensor integration, and mechanical design",
-    iot: "ESP32/ESP8266, MQTT, and cloud connectivity",
+    iot: "Arduino Boards, ESP boards, Raspberry Pi, STM32, and cloud connectivity",
     ai: "Natural language processing and computer vision basics"
 };
 
@@ -64,8 +64,8 @@ skillCards.forEach(function (card) {
             interactiveSkill.style.mixBlendMode = "difference";
             interactiveSkill.classList.add('active');
             gsap.to(interactiveSkill,{
-                left:dets.x - 100,
-                top:dets.y + 200
+                left:dets.x - 10,
+                top:dets.y + 20
             })
         }
         gsap.to(card, {

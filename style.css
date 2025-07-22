@@ -391,6 +391,13 @@ body {
 
 }
 
+/* @media screen and (min-width: 1390px) {
+
+
+
+
+} */
+
 /* Tablets */
 @media screen and (max-width: 768px) {
 
@@ -712,14 +719,72 @@ body {
 
 
 /* High resolution displays */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1390px) {
 
     .page2-right p {
         font-size: 18px;
     }
 
+    
+    .page4 {
+        padding: 140px 100px;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 9;
+        /* background-color: red; */
+    }
+
+    .elem {
+        /* background-color: red; */
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
     .elem img {
-        width: 90%;
+        position: absolute;
+        width: 300px;
+        border-radius: 10px;
+        border: 3px #a2d2ff solid;
+        opacity: 0;
+        transition: all ease-out 0.5s;
+        transform: translateY(10%) rotate(3deg);
+    }
+
+    .elem img:nth-child(1) {
+        left: 2%;
+    }
+
+    .elem img:nth-child(3) {
+        right: 10%;
+    }
+
+    .text-div {
+        /* background-color: lightblue; */
+        height: 110px;
+        overflow: hidden;
+    }
+
+    .elem h1 {
+        font-size: 7.3vw;
+        transition: all ease 0.3s;
+    }
+
+    .elem:hover h1 {
+        transform: translateY(-100%);
+        color: #a2d2ff;
+
+    }
+
+    .elem:hover img {
+        opacity: 1;
+        transform: translateY(0%) rotate(0deg);
+
     }
 
     .page5 .box {
@@ -728,8 +793,5 @@ body {
     .page5 .box h4{
         display: none;
         text-align: center;
-    }
-    .text-div{
-        display: none;
     }
 }

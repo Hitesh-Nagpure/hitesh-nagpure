@@ -395,10 +395,12 @@ html, body {
 }
 
 .interactive-skill {
-    position: fixed;
+    position: absolute;
+    max-width: 500px;
+    min-width: 200px;
+
     top: 50%;
     right: 5%;
-    transform: translateY(-50%);
     background: rgba(162, 210, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 2px solid #a2d2ff;
@@ -407,7 +409,7 @@ html, body {
     z-index: 50;
     opacity: 0;
     pointer-events: none;
-    transition: all ease 0.5s;
+    /* transition: all ease 0.5s; */
     color: #000;
 }
 
