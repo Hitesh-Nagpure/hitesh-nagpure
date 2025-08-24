@@ -14,6 +14,11 @@ html, body {
     background-color: #000;
 }
 
+body::selection{
+    background-color: #a2d2ff;
+    color: #000;
+}
+
 .cursor {
     pointer-events: none;
     height: 20px;

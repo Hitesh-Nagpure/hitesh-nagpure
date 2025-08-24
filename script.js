@@ -134,7 +134,7 @@ gsap.to(".page1 video", {
     scrollTrigger: {
         trigger: ".page1 h1",
         scroller: ".main",
-        scrub: 2,
+        scrub: 8,
         // markers:true,
         start: "top 27%",
         end: "top 0%",
